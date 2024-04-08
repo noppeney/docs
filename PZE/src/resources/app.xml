@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<datadictionary 
+	xmlns="http://www.mensio.de/dictionary/framework8/datadict.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.mensio.de/dictionary/framework8/datadict.xsd
+	http://www.mensio.de/dictionary/framework8/datadict.xsd">
+
+
+	<!-- 
+		Anwendung und Session
+	 -->
+	<Application Name="PZE" Caption="Projektzeiterfassung (01.04.2024)">
+		<Version Major="4" Minor="6" Revision="0"/>
+		<Crypt Pattern="gns$2005"/>
+		<Authentication Login="true" ClassName="framework.database.extusers.login.ExtLoginLoader"/>  
+		<Logger ClassName="framework.business.logging.ConsoleLogger"/>
+	</Application>
+ 
+
+	<!--
+		Datenbank
+	-->
+	<Database CheckEnabled="true" AutoUpdate="true">
+		<ConfigFile ClassName="startup.PZEStartupAdapter" Path="/resources/config.xml"/>
+		<Project Name="Framework" MinVersion="13" MinRevision="3"/>
+		<Project Name="PZE" MinVersion="0" MinRevision="0"/>
+		<DBUpdate ClassName="framework.Application" Path="/dbupdate/Framework_DBUPDATE.XML"/>		
+		<DBUpdate ClassName="framework.Application" Path="/dbupdate/pze_dbupdate.xml"/>
+		<InfoLoader ClassName="framework.database.connection.AppInfoLoader"/>
+	</Database>
+
+
+	<!-- 
+		XML Datadictionary Ressourcen
+	 -->
+	<Dictionary>
+		<!-- Framework Basisressourcen -->
+		<Resource ClassName="framework.Application" Path="/resources/base_tables.xml"/>
+		<Resource ClassName="framework.Application" Path="/resources/base_gui.xml"/>
+		<!-- <Resource ClassName="framework.Application" Path="/resources/swing_gui.xml"/> -->
+	 		
+	    <Resource ClassName="framework.Application" Path="/resources/base_bitmaps.xml"/>
+		<Resource ClassName="framework.Application" Path="/resources/smooth_bitmaps.xml"/>
+		<Resource ClassName="framework.Application" Path="/resources/misc_bitmaps.xml"/>
+		<!-- Ressourcen der Anwendung -->
+		<Resource ClassName="startup.PZEStartupAdapter" Path="/resources/app_tables.xml"/>
+		<Resource ClassName="startup.PZEStartupAdapter" Path="/resources/app_gui.xml"/>
+	</Dictionary>
+	
+	
+	<!-- 
+		Dateien für Berichte (HTML-Templates und Bilder)
+	 -->
+	<FileResources>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/WTI_Logo_2023_Start.png"/>
+
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/start.css"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/start.html"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/VorlageAuswertungAktivitaet.xls"/>
+
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/WTI_Logo_2023_Farbe.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/WTI_Logo_2023_Schwarz.png"/>
+
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/checked.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/unchecked.png"/>
+		
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/PdfExport.css"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/PdfExportAuszahlungUeberstunden.css"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/FooterStand.css"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/FooterStandSeitenzahl.css"/>
+		
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/rot.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/gelb.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/gruen.png"/>
+		
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/Urlaub_blau.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/Urlaub_blau_weiss.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/Urlaub_rot.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/Urlaub_rot_weiss.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/Urlaub_gelb.png"/>
+		<File ClassName="startup.PZEStartupAdapter" Path="/templates/Urlaub_gelb_weiss.png"/>
+		
+	</FileResources>
+	
+	
+	<!-- 
+		Benutzeroberfläche
+	 -->
+	<GUI Enabled="true">
+		<SelectConnectionDialog Enabled="true"/>
+		<SelectCatalogDialog Enabled="false" Pattern="*"/>
+		<MainFrame ClassName="framework.ui.mainframe.MainFrame"/>
+ 		<StatusSplash ClassName="framework.ui.statusinfo.StatusPad" BitmapClass="startup.PZEStartupAdapter" Bitmap="/templates/cd.png"/>
+	</GUI>
+	
+	
+	<!-- 
+		Aktionen, die ohne Parameter angemeldet werden können
+	 -->
+	<Actions>
+		<Action ActionID="file.exit" ClassName="framework.ui.mainframe.ExitActionListener"/>
+	</Actions>
+	
+	
+	<!-- 
+		Mail
+	 -->
+	<property ResID="smtp" Name="server" FieldType="Text" Value="localhost"/>
+	<property ResID="smtp" Name="server.fqdn" FieldType="Text" Value="localhost"/>
+    <property ResID="smtp" Name="from.addr" FieldType="Text" Value="pze.info@gns.de"/>
+    <property ResID="smtp" Name="from.realname" FieldType="Text" Value="PZE-Datenbank"/>
+    <property ResID="smtp" Name="from.replyto" FieldType="Text" Value="florian.lisiecki@gns.de"/>
+	
+</datadictionary>

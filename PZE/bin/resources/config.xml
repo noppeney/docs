@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config
+	xmlns="http://www.mensio.de/dictionary/framework8/config.xsd" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.mensio.de/dictionary/framework8/config.xsd
+	http://www.mensio.de/dictionary/framework8/config.xsd">
+
+
+<!-- WTI-PZE2019-Server    -->
+	<connection
+		ConnectionType="mssql"
+		ResID="wti_pze" 
+		Caption="Datenbank WTI-PZE-Server 2019"
+		Server="192.168.103.15" 
+		User="pze"
+		Password="pze@WT1" 
+		Catalog="PZE" 
+		Protocol="jdbc:jtds:sqlserver:"
+		Driver="net.sourceforge.jtds.jdbc.Driver" 
+		Params=";"
+		LoaderClass="pze.database.LoaderBase"
+		Default="true"/>
+
+
+<!-- WTI-PZE2019 Test-DB  	
+	<connection
+		ConnectionType="mssql"
+		ResID="wti_pze" 
+		Caption="Datenbank WTI-PZE-Server"
+		Server="192.168.103.15" 
+		User="pze"
+		Password="pze@WT1" 
+		Catalog="PZE_test" 
+		Protocol="jdbc:jtds:sqlserver:"
+		Driver="net.sourceforge.jtds.jdbc.Driver" 
+		Params=";"
+		LoaderClass="pze.database.LoaderBase"
+		Default="true"/>
+	   -->
+
+
+<!-- WTI-PZE2-Server  
+	<connection
+		ConnectionType="mssql"
+		ResID="wti_pze" 
+		Caption="Datenbank WTI-PZE-Server"
+		Server="192.168.201.100" 
+		User="pze"
+		Password="pze@WT1" 
+		Catalog="PZE" 
+		Protocol="jdbc:jtds:sqlserver:"
+		Driver="net.sourceforge.jtds.jdbc.Driver" 
+		Params=";"
+		LoaderClass="pze.database.LoaderBase"
+		Default="true"/>
+	--> 	 
+
+
+<!-- WTI-PZE2 Test-DB  	 
+	<connection
+		ConnectionType="mssql"
+		ResID="wti_pze" 
+		Caption="Datenbank WTI-PZE-Server"
+		Server="192.168.201.100" 
+		User="pze"
+		Password="pze@WT1" 
+		Catalog="PZE_test" 
+		Protocol="jdbc:jtds:sqlserver:"
+		Driver="net.sourceforge.jtds.jdbc.Driver" 
+		Params=";"
+		LoaderClass="pze.database.LoaderBase"
+		Default="true"/>
+	-->  
+
+<!-- WTI-PZE-Server (alt) 
+	<connection
+		ConnectionType="mssql"
+		ResID="wti_pze" 
+		Caption="Datenbank WTI-PZE-Server"
+		Server="192.168.0.17" 
+		User="pze"
+		Password="pze@WT1" 
+		Catalog="PZE" 
+		Protocol="jdbc:jtds:sqlserver:"
+		Driver="net.sourceforge.jtds.jdbc.Driver" 
+		Params=";"
+		LoaderClass="pze.database.LoaderBase"
+		Default="true"/>
+-->
+
+
+<!-- WTI-time-Server 
+	<connection
+		ConnectionType="mssql"
+		ResID="wti_time" 
+		Caption="Datenbank WTI-time-Server"
+		Server="192.168.0.180" 
+		User="updateuser"
+		Password="updateuser" 
+		Catalog="geloc32" 
+		Protocol="jdbc:jtds:sqlserver:"
+		Driver="net.sourceforge.jtds.jdbc.Driver" 
+		Params=";"
+		LoaderClass="pze.database.LoaderBase"
+		Default="false"/>
+	-->
+		
+
+<!-- WTI-time2019-Server -->
+	<connection
+		ConnectionType="mssql"
+		ResID="wti_time" 
+		Caption="Datenbank WTI-time-Server"
+		Server="192.168.201.1" 
+		User="updateuser"
+		Password="updateuser" 
+		Catalog="geloc32" 
+		Protocol="jdbc:jtds:sqlserver:"
+		Driver="net.sourceforge.jtds.jdbc.Driver" 
+		Params=";"
+		LoaderClass="pze.database.LoaderBase"
+		Default="false"/>
+		
+		
+<!-- WTI-Intranet-Server (für Verbindung zur Urlaubsplanung)  veraltet, da Urlaubsplanung seit 2020/2021 im PZE
+	<connection
+		ConnectionType="mysql"
+		ResID="wti_intranet" 
+		Caption="Intranet-Datenbank"
+		Server="192.168.0.97" 
+		User="root"
+		Password=""
+		Catalog="intranet" 
+		Protocol="jdbc:mysql:"
+		Driver="com.mysql.jdbc.Driver" 
+		Params="/?useUnicode=true&amp;characterEncoding=UTF-8"
+		Default="false"/>
+-->
+		
+</config>

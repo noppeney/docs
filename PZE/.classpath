@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mensio.framework.8"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.business.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.cui.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.database.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.interfaces.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.resources.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.ui.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.wui.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/swt/swt-native-libs.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/poi/poi-3.10.1.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.business.users.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/framework/dev/mensio.ui.users.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/database/jtds-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/core-renderer.jar"/>
+	<classpathentry kind="lib" path="lib/iText-2.0.8.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/swt64/org.eclipse.swt.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/swt64/org.eclipse.swt.win32.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/database/mysql-connector-java-3.1.12-bin.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/pdf/pd4ml.jar"/>
+	<classpathentry kind="lib" path="/mensio.framework.8/lib/pdf/PDFRenderer.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+

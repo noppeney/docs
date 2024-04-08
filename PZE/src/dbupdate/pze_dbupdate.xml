@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+
+<dbupdate xmlns="http://www.mensio.de/dictionary/framework8/dbupdate.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.mensio.de/dictionary/framework8/dbupdate.xsd http://www.mensio.de/dictionary/framework8/dbupdate.xsd">
+
+   <item ProjectID="PZE" Version="0" Revision="1" TableName="sequence" Type="mssql" UserName="lisiecki" ScriptDate="2014-07-16T16:00:00" IsTrigger="false" IsActive="true" Description="CREATE sequence">
+<![CDATA[
+Select 1 from rtblusers
+]]>
+	</item>
+</dbupdate>
+

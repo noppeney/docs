@@ -1,0 +1,93 @@
+
+div.pageVerguetungUeberstunden {
+	border: 2px solid black;
+	padding-bottom: 30px;
+	page-break-inside: auto;
+	width= 100%;
+}
+
+
+table.innenUeberstunde td {
+	border-left: 0px !important;
+	border-bottom: 0px !important;
+	border-right: 0px !important;
+	border-top: 0px !important;
+	width: 100%;
+	height: 20px; /* Irgendwie wollte der das mit Prozenten nicht machen,
+	also habe ich eine Anzahl Pixel genommen.*/
+}
+
+
+/* Fuer Antrag Verguetung Ueberstunden Tabelle */
+.platz_nach_unten {
+	pading-top   : 10px;
+	padding-bottom: 10px;
+}
+
+.padding-oben {
+	padding-top: 20px;
+}
+
+
+.padding-unten {
+	padding-bottom: 20px;
+}
+
+.platz_mehr {
+	pading-top   : 20px;
+	padding-bottom: 20px;
+}
+td.spalte1 {
+	width=20%;
+}
+td.spalte2 {
+	width=20%;
+}
+td.spalte3 {
+	width=15%;
+}
+td.spalte4 {
+	width=15%;
+}
+td.spalte5 {
+	width=15%;
+}
+/**********************************************/
+
+#NameFeld {
+	margin-right: 20px;
+}
+
+span.platz {
+	margin-bottom: 100px;
+}
+
+.DatumUnterschrift {
+	text-align: right;
+	margin-right:50px;
+	margin-left: 60%;
+}
+
+.DatumUnterschrift2 {
+	text-align: right;
+	margin-right:52px;
+	margin-left: 58%;
+}
+
+table.table-gross tr {
+	width: auto;
+	height: 25px;
+	line-height: 25px;
+}
+
+.unterschriftFeld {
+	width: 44%
+}
+
+.unsichtbarFeld {
+	width: 28%
+}
+
+#Personalabteilung {
+	
+}

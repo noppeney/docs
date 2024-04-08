@@ -1,0 +1,9 @@
+
+
+/************** Footer mit Seitenanzahl *************/
+@page { 
+    @bottom-left { content: element(footer) }
+    @bottom-right { content: "Seite " counter(page) " von " counter(pages); font-size:13px; }
+}
+/*********************************************/
+

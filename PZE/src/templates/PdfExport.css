@@ -1,0 +1,466 @@
+
+body {
+	margin-bottom: 0px;
+	margin-left: 30px;
+	margin-right: 2px;
+	margin-top: 0px;
+	font-size: 13px;
+}
+
+footer {
+	overflow: none;
+	position: fixed;
+	bottom: 0px;
+}
+
+div.volle_breite {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: auto;
+	margin-right: 10px;
+}
+
+div.containerVertikal {
+	display: flex;
+	flex-direction: column;
+}
+
+div.containerHorizontal {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+
+
+/************** Footer und Header *************/
+div.header {
+    display: block; text-align: center; 
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+     @top-center { content: element(header) }
+}
+/*********************************************/
+
+
+span.unterstrich {
+	display: table-cell;
+	border-bottom: 1px solid;
+	margin-right: 40px;
+	width: 250px;
+}
+
+span.text {
+	display: table-cell;
+	width: 250px;
+	text-align: center;
+}
+
+/* Einrücken um 80 px */
+span.blank {
+	display: table-cell;
+	width: 80px;
+}
+
+.dickerRahmen {
+	border: 2px solid black;
+}
+
+div.page {
+	padding-bottom: 30px;
+	page-break-inside: auto;
+	page-break-after: always;
+}
+
+
+div.dlinks {
+	width: 400px;
+	display: block;
+	float: left;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+div.gleichverteilen {
+	width: 33%;
+	flex-grow: 1
+}
+div.gleichverteilen1 {
+	width: 34%
+}
+
+div.drechts {
+	display: block;
+	margin-left: auto;
+	margin-right: 0px;
+	float: right;
+}
+
+div.doben {
+	display: flex;
+	vertical-align: top;
+}
+
+div.dunten {
+	margin-top: 12px;
+	font-size: 11px;
+}
+
+/*
+div.borderblue {
+	border: 3px solid #0097ff;
+}
+*/
+
+h1.echter_h1 {
+	width: 100%;
+	font-size: 22px;
+}
+
+h1 {
+	width: 40%;
+}
+
+h2.ueberstunden_h2 {
+	font-size: 14px;
+}
+
+div.eingerueckt {
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+img {
+	width: 150px;
+	margin-left: 100px;
+}
+
+.imgboxen {
+	width: 10px;
+	margin-left: 0px;
+}
+
+table {
+	width: 100%;
+	border: 2px solid;
+	page-break-inside: auto;
+	margin-bottom: 30px;
+}
+
+table, td, tr, th {
+	overflow: none;
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid;
+	text-align: center;
+}
+
+th {
+	border: 2px solid;
+}
+
+.borderTop{
+	border-top: 2px solid black;
+}
+
+.borderBottom {
+	border-bottom: 2px solid black;
+}
+
+.borderBottomDuenn{
+	border-bottom: 1px solid black !important;
+}
+
+.noBorderBottom{ /* NEW */
+	border-bottom: 0px;
+}
+
+.borderTopDuenn{
+	border-top: 1px solid black !important;
+}
+
+.borderRightDuenn{ /* NEW */
+	border-right: 1px solid !important;
+}
+
+.borderLeftDuenn{ /* NEW */
+	border-left: 1px solid black !important;
+}
+
+@media print {
+	table {
+		page-break-inside: auto;
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr, td {
+		page-break-inside: avoid;
+		page-break-after: auto;
+	}
+}
+
+.no-break {
+	page-break-inside: avoid;
+	position: relative;
+}
+
+table.textspalten2 td {
+	text-align: left;
+}
+
+table.textspalten {
+	line-height: 0px;
+}
+
+table.textspalten td {
+	text-align: left;
+}
+
+table.innen { /* Tabelle in der Überschriftenzeile  */
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+table.innen td {
+	border-left: 0px !important;
+	border-bottom: 0px !important;
+	border-right: 0px !important;
+	width: 100%;
+	height: 20px; /* Irgendwie wollte der das mit Prozenten nicht machen,
+	also habe ich eine Anzahl Pixel genommen.*/
+}
+
+table.ohne_rand {
+	border-left: 0px !important;
+	border-bottom: 0px !important;
+	border-right: 0px !important;
+	border-top: 0px !important;
+}
+
+table.feste_groesse {
+	table-layout: fixed;
+	word-break: break-all;
+}
+
+table.feste_groesse td {
+	
+}
+
+td.kein_umbruch {
+	white-space: nowrap;
+}
+
+.klein {
+	font-size: 11px;
+}
+
+.fontsize16 {
+	font-size: 16px;
+}
+
+.fontsize11 {
+	font-size: 11px;
+}
+
+.fontsize10 {
+	font-size: 10px;
+}
+
+.fontsize9 {
+	font-size: 9px;
+}
+
+.kleiner {
+	font-size: 9px;
+}
+
+.fontweightbold {
+	font-weight: bold;
+}
+
+.fettkursiv {
+	font-weight: bold;
+	font-style: italic;
+}
+
+td.umrandet {
+	border: 2px solid;
+	font-weight: bold;
+}
+
+.unsichtbar {
+	border: 0px;
+	width: auto;
+}
+
+.textlinks {
+	text-align: left;
+}
+
+.textlinkseingerueckt { /* NEW */
+	text-align: left;
+	padding-left: 5px;
+}
+
+.textrechts {
+	text-align: right;
+}
+
+.textmitte {
+	text-align: center;
+}
+
+.textcenter {
+	text-align: center;
+}
+
+.textoben {
+	vertical-align: top;
+}
+
+.textobeneingerueckt {
+	padding-top: 5px;
+}
+
+.breite10px {
+	width: 10px;
+}
+
+.breite25px {
+	width: 25px;
+}
+
+.breite41px {
+	width: 41px;
+}
+
+.breite50px {
+	width: 50px;
+}
+
+.breite80px {
+	width: 80px;
+}
+
+.breite95px {
+	width: 95px;
+}
+
+.breiteTagAnwesenheit {
+	width: 102px;
+}
+
+.breite150px {
+	width: 150px;
+}
+
+.bgcolorrot {
+	background='rot.png';
+}
+
+.bgcolorgruen {
+	background='gruen.png';
+}
+
+.bgcolorgelb {
+	background='gelb.png';
+}
+
+td.oben {
+	border-top: 0px !important;
+}
+
+td.moneinkeinprojekt {
+	width: 7%; 
+}
+
+td.moneinprojekt {
+	width: 8%;
+}
+
+th.moneinkeinprojekt {
+	width: 7%; 
+}
+
+th.moneinprojekte {
+	width: 8%;
+}
+
+td.tnrechts {
+	text-align: left;
+	width: 84%;
+}
+
+td.tnlinks {
+	text-align: center;
+	width: 8%
+}
+
+hr {/* Unterschriftenlinie */
+	margin-bottom: 0px;
+	border-top-style: solid;
+	color: black;
+	border-bottom: 0px;
+}
+
+
+/* Aufruf: <td> <div class='blackbar'></div> </td> */
+/* Erzeugt einen schwarzen Balken in der Mitte mit der angegebenen Hoehe */
+.blackbar {
+	background-color: black;
+	height: 3px;
+}*/
+
+
+
+.legendebreit {
+	width: 50px;
+}
+
+.legendeschmal {
+	width: 18px;
+}
+
+
+/* Klassen für durchgestrichene Tabellenzellen */
+.parent {
+	position: relative;
+	margin-top: -1px;
+}
+
+.childTop {
+	z-index:2;
+	height: 3px;
+	position: absolute;
+}
+
+.childBack {
+	z-index:1; 
+	margin-top: -4px; 
+	position: absolute;
+}
+
+.blackbar {
+	background-image: url('balken.png');
+}

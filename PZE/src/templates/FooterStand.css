@@ -1,0 +1,8 @@
+
+
+/************** Footer mit Seitenanzahl *************/
+@page { 
+    @bottom-left { content: element(footer) }
+}
+/*********************************************/
+

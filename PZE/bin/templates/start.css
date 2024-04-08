@@ -1,0 +1,95 @@
+html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+ 	background-image:url(WTI_Logo_2023_Start.png);
+	background-repeat: no-repeat;
+	background-position: 1% 1%;
+
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 2;
+	text-align: center;
+	vertical-align: center
+}
+
+table, tr, td
+{
+    border-collapse: collapse;
+}
+
+table.hauptteil {
+	width: 100%;
+	height: 75%;
+/*	background-image:url(dwr.jpg); */)
+	background-repeat:no-repeat; 
+	background-position:center center;
+}
+
+table.kopf {
+	width: 100%;
+	height: 10%;
+}
+
+
+td.header_cell {
+	text-align: center;
+	border-style: none;
+}
+
+
+td.programm_cell {
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: center;
+	border-style: none;
+	color: rgb(238, 126, 0);
+	font-size: 22px;
+}
+
+
+td {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	color: black;
+	color: rgb(112, 116, 112);
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: silver;
+	padding-left: 20px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+tr.border_bottom td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: silver;
+}
+
